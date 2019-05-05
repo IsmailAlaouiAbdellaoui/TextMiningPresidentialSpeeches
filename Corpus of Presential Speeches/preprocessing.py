@@ -71,7 +71,7 @@ def fill_all_speeches():
                             content = content_file.read()
                             all_speeches.append(content)
 
-fill_all_speeches()
+#fill_all_speeches()
 #print(len(all_speeches))
 
 
@@ -131,33 +131,47 @@ def stemmer():
 
 
 
-t0 = time.process_time()
-words = stemmer()
-stemming_time = time.process_time()-t0
-print("time for stemming : ", stemming_time)
-test_words = ["ugliest","craven","airmen","gall","blacken","andr","incendiari","dogmat","squalid","ignobl"]
-#model = gensim.models.Word2Vec(
-#        words,
-#        size=150,
-#        window=10,
-#        min_count=2,
-#        workers=10)
-#model.train(words, total_examples=len(words), epochs=10)
-#model = gensim.models.Word2Vec(
-#        test_words,
-#        size=150,
-#        window=10,
-#        min_count=2,
-#        workers=10)
-#model.train(test_words, total_examples=len(test_words), epochs=10)
+#t0 = time.process_time()
+#words = stemmer()
+def word2vecspeeches(stemmed_words_speeches):
+    model = gensim.models.Word2Vec(stemmed_words_speeches,size=150,window=10,min_count=2,workers=10)
+    model.train(stemmed_words_speeches, total_examples=len(stemmed_words_speeches), epochs=10)
+#    w1 = ["sky"]
+#    print(model.wv.most_similar(positive=w1))
 
-model = gensim.models.Word2Vec.load_word2vec_format('./model/GoogleNews-vectors-negative300.bin', binary=True)  
+#with open("opinion-lexicon-English/negative-words.txt", "r", encoding="utf8") as negative_file:
+#    content = negative_file.read()
+##    all_speeches.append(content) 
+#    print(content)
+negative_list = []
+negative_file = open("opinion-lexicon-English/negative-words.txt", "r")
+content = negative_file.readlines()
+for i in range(len(content)):
+    if i > 32:
+        negative_list.append(content[i])
+negative_file.close()
+print(len(negative_list))
 
-training_time = time.process_time() - stemming_time
-print("training time : ",training_time)
-w1 = ["ignobl"]
-print(model.wv.most_similar(positive=w1))
 
+positive_list = []
+positive_file = open("opinion-lexicon-English/positive-words.txt", "r")
+content = positive_file.readlines()
+for i in range(len(content)):
+    if i > 30:
+        positive_list.append(content[i])
+positive_file.close()
+print(len(positive_list))
+
+
+
+#def word2vecnegatives(stemmed_words_negatives):
+    
+#To do list:
+#-Combine negative/positive into 1 list
+#-Transform each word into a vector using Word2Vec
+#-Create a big list of scores ( for each word)
+#-Training SVM (or LSTM) using this newly created dataset
+#-Use trained model to test on our speeches
     
 
             
