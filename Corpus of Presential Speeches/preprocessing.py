@@ -4,6 +4,8 @@ from nltk.tokenize import RegexpTokenizer
 from nltk.corpus import stopwords
 from nltk.stem import PorterStemmer
 import nltk
+import gensim
+import time
 
 #os.rename("0-adams","adams")
 adams = [[]]
@@ -129,9 +131,32 @@ def stemmer():
 
 
 
+t0 = time.process_time()
+words = stemmer()
+stemming_time = time.process_time()-t0
+print("time for stemming : ", stemming_time)
+test_words = ["ugliest","craven","airmen","gall","blacken","andr","incendiari","dogmat","squalid","ignobl"]
+#model = gensim.models.Word2Vec(
+#        words,
+#        size=150,
+#        window=10,
+#        min_count=2,
+#        workers=10)
+#model.train(words, total_examples=len(words), epochs=10)
+#model = gensim.models.Word2Vec(
+#        test_words,
+#        size=150,
+#        window=10,
+#        min_count=2,
+#        workers=10)
+#model.train(test_words, total_examples=len(test_words), epochs=10)
 
-test = stemmer()
-print(len(test))
+model = gensim.models.Word2Vec.load_word2vec_format('./model/GoogleNews-vectors-negative300.bin', binary=True)  
+
+training_time = time.process_time() - stemming_time
+print("training time : ",training_time)
+w1 = ["ignobl"]
+print(model.wv.most_similar(positive=w1))
 
     
 
