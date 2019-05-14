@@ -67,11 +67,20 @@ def fill_all_speeches():
         for (rootDir, subDirs, files) in os.walk(folder_names[i]):
                 for file in files:
                     if file.endswith(".txt"):
-                        with open(str(folder_names[i])+"\\"+str(file), 'r', encoding="utf8") as content_file:
-                            content = content_file.read()
-                            all_speeches.append(content)
+                        content_file = open(str(folder_names[i])+"\\"+str(file), 'r', encoding="utf8")
+                        content = content_file.readlines()
+                        all_speeches.append(content)
+                        content_file.close()
+                        
+    
+                        
+                        
+#                        with open(str(folder_names[i])+"\\"+str(file), 'r') as content_file:
+#                            content = content_file.read()
+#                            all_speeches.append(content)
 
 #fill_all_speeches()
+#print(all_speeches)
 #print(len(all_speeches))
 
 
@@ -88,19 +97,28 @@ def tokenizer_with_punctuation():
     for speech in all_speeches:
         tokenized_all_speeches_punctuation.append(word_tokenize(speech))
     
-#tokenizer_with_punctuation()
+#temp = tokenizer_with_punctuation()
+#print(temp)
 
 
                         
 def tokenizer_without_punctuation():
     tokenizer = RegexpTokenizer(r'\w+')
     for speech in all_speeches:
-        tokenized_all_speeches_without_punctuation.append(tokenizer.tokenize(speech))
+        tokenized_all_speeches_without_punctuation.append(tokenizer.tokenize(str(speech)))
     
     return tokenized_all_speeches_without_punctuation
+
+def sentence_tokenizer():
+    sent_detector = nltk.data.load('tokenizers/punkt/english.pickle')
+    for speech in all_speeches:
+        tokenized_all_speeches_without_punctuation.append(''.join(sent_detector.tokenize(str(speech).strip())))
+        
+    return tokenized_all_speeches_without_punctuation
     
-#test = tokenizer_without_punctuation()
-#print(test[0])
+#test = sentence_tokenizer()
+#print(test)
+#print(len(test))
                 
 def delete_stopwords():
 #    nltk.download('stopwords')
@@ -161,88 +179,91 @@ def word2vecspeeches(stemmed_words_speeches):
 #        positive_list.append(content[i])
 #positive_file.close()
 #print(len(positive_list))
-from string import punctuation
-from collections import Counter
 
-amazon_reviews = []
-amazon_labels = []
-
-amazon_file = open("amazon_cells_labelled.txt","r")
-content = amazon_file.readlines()
-amazon_file.close()
-for x in content:
-    temp = x.split('\t')
-    amazon_reviews.append(''.join([c for c in temp[0].lower() if c not in punctuation]))
-    amazon_labels.append(temp[1].replace('\n',''))
+def preprocess_other_data():
+    from string import punctuation
+    from collections import Counter
     
-
-all_text2 = ' '.join(amazon_reviews)
-# create a list of words
-words = all_text2.split()
-# Count all the words using Counter Method
-count_words = Counter(words)
-
-total_words = len(words)
-sorted_words = count_words.most_common(total_words)
-#print(sorted_words)
-vocab_to_int = {w:i+1 for i, (w,c) in enumerate(sorted_words)}
-#print(vocab_to_int)
-reviews_int = []
-for review in amazon_reviews:
-    r = [vocab_to_int[w] for w in review.split()]
-    reviews_int.append(r)
+    amazon_reviews = []
+    amazon_labels = []
     
-encoded_labels = [1 if label =='1' else 0 for label in amazon_labels]
-encoded_labels = np.array(encoded_labels)
-#print(encoded_labels)
-
-
-def pad_features(reviews_int, seq_length):
-    ''' Return features of review_ints, where each review is padded with 0's or truncated to the input seq_length.
-    '''
-    features = np.zeros((len(reviews_int), seq_length), dtype = int)
-    
-    for i, review in enumerate(reviews_int):
-        review_len = len(review)
+    amazon_file = open("amazon_cells_labelled.txt","r")
+    content = amazon_file.readlines()
+    amazon_file.close()
+    #print(content)
+    for x in content:
+        temp = x.split('\t')
+        amazon_reviews.append(''.join([c for c in temp[0].lower() if c not in punctuation]))
+        amazon_labels.append(temp[1].replace('\n',''))
         
-        if review_len <= seq_length:
-            zeroes = list(np.zeros(seq_length-review_len))
-            new = zeroes+review
-        elif review_len > seq_length:
-            new = review[0:seq_length]
-        
-        features[i,:] = np.array(new)
     
-    return features
+    all_text2 = ' '.join(amazon_reviews)
+    # create a list of words
+    words = all_text2.split()
+    # Count all the words using Counter Method
+    count_words = Counter(words)
+    
+    total_words = len(words)
+    sorted_words = count_words.most_common(total_words)
+    #print(sorted_words)
+    vocab_to_int = {w:i+1 for i, (w,c) in enumerate(sorted_words)}
+    #print(vocab_to_int)
+    reviews_int = []
+    for review in amazon_reviews:
+        r = [vocab_to_int[w] for w in review.split()]
+        reviews_int.append(r)
+        
+    encoded_labels = [1 if label =='1' else 0 for label in amazon_labels]
+    encoded_labels = np.array(encoded_labels)
+    #print(encoded_labels)
+    
+    
+    def pad_features(reviews_int, seq_length):
+        ''' Return features of review_ints, where each review is padded with 0's or truncated to the input seq_length.
+        '''
+        features = np.zeros((len(reviews_int), seq_length), dtype = int)
+        
+        for i, review in enumerate(reviews_int):
+            review_len = len(review)
+            
+            if review_len <= seq_length:
+                zeroes = list(np.zeros(seq_length-review_len))
+                new = zeroes+review
+            elif review_len > seq_length:
+                new = review[0:seq_length]
+            
+            features[i,:] = np.array(new)
+        
+        return features
+    
+    len_feat = 10
+    features = pad_features(reviews_int,len_feat)
+    
+    split_frac = 0.8
+    train_x = features[0:int(split_frac*10)]
+    train_y = encoded_labels[0:int(split_frac*len_feat)]
+    remaining_x = features[int(split_frac*len_feat):]
+    remaining_y = encoded_labels[int(split_frac*len_feat):]
+    valid_x = remaining_x[0:int(len(remaining_x)*0.5)]
+    valid_y = remaining_y[0:int(len(remaining_y)*0.5)]
+    test_x = remaining_x[int(len(remaining_x)*0.5):]
+    test_y = remaining_y[int(len(remaining_y)*0.5):]
 
-len_feat = 10
-features = pad_features(reviews_int,len_feat)
-
-split_frac = 0.8
-train_x = features[0:int(split_frac*10)]
-train_y = encoded_labels[0:int(split_frac*len_feat)]
-remaining_x = features[int(split_frac*len_feat):]
-remaining_y = encoded_labels[int(split_frac*len_feat):]
-valid_x = remaining_x[0:int(len(remaining_x)*0.5)]
-valid_y = remaining_y[0:int(len(remaining_y)*0.5)]
-test_x = remaining_x[int(len(remaining_x)*0.5):]
-test_y = remaining_y[int(len(remaining_y)*0.5):]
-
-import torch
-from torch.utils.data import DataLoader, TensorDataset
-# create Tensor datasets
-train_data = TensorDataset(torch.from_numpy(train_x), torch.from_numpy(train_y))
-valid_data = TensorDataset(torch.from_numpy(valid_x), torch.from_numpy(valid_y))
-test_data = TensorDataset(torch.from_numpy(test_x), torch.from_numpy(test_y))
-# dataloaders
-batch_size = 50
-# make sure to SHUFFLE your data
-train_loader = DataLoader(train_data, shuffle=True, batch_size=batch_size)
-valid_loader = DataLoader(valid_data, shuffle=True, batch_size=batch_size)
-test_loader = DataLoader(test_data, shuffle=True, batch_size=batch_size)
-
-dataiter = iter(train_loader)
-sample_x, sample_y = dataiter.next()
+#import torch
+#from torch.utils.data import DataLoader, TensorDataset
+## create Tensor datasets
+#train_data = TensorDataset(torch.from_numpy(train_x), torch.from_numpy(train_y))
+#valid_data = TensorDataset(torch.from_numpy(valid_x), torch.from_numpy(valid_y))
+#test_data = TensorDataset(torch.from_numpy(test_x), torch.from_numpy(test_y))
+## dataloaders
+#batch_size = 50
+## make sure to SHUFFLE your data
+#train_loader = DataLoader(train_data, shuffle=True, batch_size=batch_size)
+#valid_loader = DataLoader(valid_data, shuffle=True, batch_size=batch_size)
+#test_loader = DataLoader(test_data, shuffle=True, batch_size=batch_size)
+#
+#dataiter = iter(train_loader)
+#sample_x, sample_y = dataiter.next()
 #print('Sample input size: ', sample_x.size()) # batch_size, seq_length
 #print('Sample input: \n', sample_x)
 #print()
@@ -416,13 +437,13 @@ sample_x, sample_y = dataiter.next()
 #-Create a big list of scores ( for each word)
 #-Training SVM (or LSTM) using this newly created dataset
 #-Use trained model to test on our speeches
-from flair.embeddings import WordEmbeddings
-
-glove_embedding = WordEmbeddings('glove')
-from flair.data import Sentence
-sentence = Sentence('The grass is green .')
-
-glove_embedding.embed(sentence)
+#from flair.embeddings import WordEmbeddings
+#
+#glove_embedding = WordEmbeddings('glove')
+#from flair.data import Sentence
+#sentence = Sentence('The grass is green .')
+#
+#glove_embedding.embed(sentence)
 
 #for token in sentence:
 #    print(token)
@@ -436,31 +457,58 @@ glove_embedding.embed(sentence)
 ## create a sentence
 #sentence = Sentence('The grass is green .')
 #
-## embed words in sentence
+# embed words in sentence
 #flair_embedding_forward.embed(sentence)
 ##print(str(sentence.embedding.))
 #print(sentence.get_embedding())
+#import gc
 import torch
 from flair.data import Sentence
 from flair.embeddings import WordEmbeddings
-
-# load word embeddings
-embeddings = WordEmbeddings('glove')
-
-# some example sentence
-sentence = Sentence('I love Berlin')
-
-# embed sentences
-embeddings.embed(sentence)
-
-
-
-# make one tensor of all word embeddings of a sentence
+#
+## load word embeddings
+embeddings_glove = WordEmbeddings('glove')
+#
+## some example sentence
+sentence = Sentence('On the contrary, to extend and invigorate them is our true policy')
+#
+## embed sentences
+embeddings_glove.embed(sentence)
+#
+#
+#
+## make one tensor of all word embeddings of a sentence
 sentence_tensor = torch.cat([token.embedding.unsqueeze(0) for token in sentence], dim=0)
 
 # print tensor shape
 print(sentence_tensor.shape) 
 print(sentence_tensor)
+
+from flair.embeddings import FlairEmbeddings
+
+# init embedding
+flair_embedding_forward = FlairEmbeddings('news-forward')
+
+# create a sentence
+sentence = Sentence('On the contrary, to extend and invigorate them is our true policy')
+
+# embed words in sentence
+flair_embedding_forward.embed(sentence)
+sentence_tensor = torch.cat([token.embedding.unsqueeze(0) for token in sentence], dim=0)
+
+# print tensor shape
+print(sentence_tensor.shape) 
+print(sentence_tensor)
+
+
+#from flair.models import TextClassifier
+#from flair.data import Sentence
+#classifier = TextClassifier.load('en-sentiment')
+#sentence = Sentence('Jakub is late')
+#classifier.predict(sentence)
+## print sentence with predicted labels
+#print('Sentence above is: ', sentence.labels)
+#gc.collect()
             
 
     
