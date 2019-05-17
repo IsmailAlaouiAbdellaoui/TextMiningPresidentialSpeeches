@@ -65,13 +65,23 @@ def fill_all_speeches():
         folder_names.append(rootDir)
     for i in range(1,len(folder_names)):
         for (rootDir, subDirs, files) in os.walk(folder_names[i]):
-                for file in files:
-                    if file.endswith(".txt"):
-                        content_file = open(str(folder_names[i])+"\\"+str(file), 'r', encoding="utf8")
-                        content = content_file.readlines()
-                        all_speeches.append(content)
-                        content_file.close()
-                        
+            temp = []
+            for file in files:
+                if file.endswith(".txt"):
+                    content_file = open(str(folder_names[i])+"\\"+str(file), 'r', encoding="utf8")
+                    content = content_file.readlines()
+                    temp.append(content)
+                    content_file.close()
+            all_speeches.append(temp)
+                
+#def test():
+#    for (rootDir, subDirs, files) in os.walk("."):
+#        folder_names.append(rootDir)
+#    for i in range(1,len(folder_names)):
+        
+#        print(i)
+#        print(folder_names[i])
+                                     
     
                         
                         
@@ -79,9 +89,29 @@ def fill_all_speeches():
 #                            content = content_file.read()
 #                            all_speeches.append(content)
 
-#fill_all_speeches()
+fill_all_speeches()
+#print(len(all_speeches[0]))
+#print(len(all_speeches[1]))
+#print(len(all_speeches[2]))
+#print("before removal\n",all_speeches[0][0][0])
+
+for i in range(len(all_speeches)):
+    for j in range(len(all_speeches[i])):
+        all_speeches[i][j].pop(0)
+        all_speeches[i][j].pop(0)
+        
+from nltk.tokenize import sent_tokenize
+
+#test()
 #print(all_speeches)
 #print(len(all_speeches))
+#print("after removal\n",all_speeches[0][0][0])
+first_speech_first_president = all_speeches[0][0][0]
+
+list_sentences_first_speech = sent_tokenize(first_speech_first_president,language='english')
+print(list_sentences_first_speech[0])
+temp = str(list_sentences_first_speech[0]).split(" ")
+print(len(temp))
 
 
         
@@ -481,8 +511,8 @@ embeddings_glove.embed(sentence)
 sentence_tensor = torch.cat([token.embedding.unsqueeze(0) for token in sentence], dim=0)
 
 # print tensor shape
-print(sentence_tensor.shape) 
-print(sentence_tensor)
+#print(sentence_tensor.shape) 
+#print(sentence_tensor)
 
 from flair.embeddings import FlairEmbeddings
 
@@ -497,8 +527,8 @@ flair_embedding_forward.embed(sentence)
 sentence_tensor = torch.cat([token.embedding.unsqueeze(0) for token in sentence], dim=0)
 
 # print tensor shape
-print(sentence_tensor.shape) 
-print(sentence_tensor)
+#print(sentence_tensor.shape) 
+#print(sentence_tensor)
 
 
 #from flair.models import TextClassifier
