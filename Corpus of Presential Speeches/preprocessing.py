@@ -101,23 +101,59 @@ for i in range(len(all_speeches)):
         all_speeches[i][j].pop(0)
         
 from nltk.tokenize import sent_tokenize
+#all_speeches_cleaned = []
+#for i in range(len(all_speeches)):
+#    for j in range(len(all_speeches[i])):
+#        temp = []
+#        for k in range(len(all_speeches[i][j])):
+#            temp.append(all_speeches[i][j])
+#            
+#    all_speeches_cleaned.append(temp)
+#        
+#print(len(all_speeches_cleaned))
+#print(len(all_speeches_cleaned[1]))
+            
 
 #test()
 #print(all_speeches)
 #print(len(all_speeches))
 #print("after removal\n",all_speeches[0][0][0])
-#for i in range(len(all_speeches)):#iterate though all speeches
+#test = [[]]
+test = []
+#for i in range(1):#iterate through all speeches
 #    for j in range(len(all_speeches[i])): #iterate through all speeches of 1 president
+#        print(all_speeches[i][j])
 #        for k in range(len(all_speeches[i][j])): #iterate through
-#            print(k)
+#            print(all_speeches[i][j][k])
+
+        
+#print(temp1[0])
+#print(temp1[0][0][1])
+#for i in range(len(all_speeches)):
+#    sent_token_speech = sent_tokenize(all_speeches[i],language='english')
+    
+    
+test = ''.join(str(all_speeches[0]))
+test2 = sent_tokenize(test,language='english')
+print(test2)
+
+    
+            
+            
+
+            
+            
 #            print(all_speeches[i][j][k])
 #        sent_token_speech = sent_tokenize(all_speeches[i][j][k],language='english')
 #        for sentence in sent_token_speech:
 #            number_words = len(str(list_sentences_first_speech[0]).split(" "))
 #first_speech_first_president = all_speeches[0][0][0]
-print(len(all_speeches))
-print(len(all_speeches[0]))
-print(len(all_speeches[0][1]))
+
+#print(len(all_speeches))#list of presidents 43
+#print(len(all_speeches[0]))#number of speeches per president
+#print(len(all_speeches[0][0]))#number of lines in a speech
+#print(len(all_speeches[0][0][0]))#a line in a speech
+#print(all_speeches[0][0][0])
 
 #list_sentences_first_speech = sent_tokenize(first_speech_first_president,language='english')
 #print(list_sentences_first_speech[0])
