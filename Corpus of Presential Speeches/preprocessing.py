@@ -106,12 +106,23 @@ from nltk.tokenize import sent_tokenize
 #print(all_speeches)
 #print(len(all_speeches))
 #print("after removal\n",all_speeches[0][0][0])
-first_speech_first_president = all_speeches[0][0][0]
+#for i in range(len(all_speeches)):#iterate though all speeches
+#    for j in range(len(all_speeches[i])): #iterate through all speeches of 1 president
+#        for k in range(len(all_speeches[i][j])): #iterate through
+#            print(k)
+#            print(all_speeches[i][j][k])
+#        sent_token_speech = sent_tokenize(all_speeches[i][j][k],language='english')
+#        for sentence in sent_token_speech:
+#            number_words = len(str(list_sentences_first_speech[0]).split(" "))
+#first_speech_first_president = all_speeches[0][0][0]
+print(len(all_speeches))
+print(len(all_speeches[0]))
+print(len(all_speeches[0][1]))
 
-list_sentences_first_speech = sent_tokenize(first_speech_first_president,language='english')
-print(list_sentences_first_speech[0])
-temp = str(list_sentences_first_speech[0]).split(" ")
-print(len(temp))
+#list_sentences_first_speech = sent_tokenize(first_speech_first_president,language='english')
+#print(list_sentences_first_speech[0])
+#number_words_first_sentence = str(list_sentences_first_speech[0]).split(" ")
+#print(len(number_words_first_sentence))
 
 
         
