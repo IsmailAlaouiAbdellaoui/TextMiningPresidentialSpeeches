@@ -73,6 +73,83 @@ def fill_all_speeches():
                     temp.append(content)
                     content_file.close()
             all_speeches.append(temp)
+
+import functools
+test_dict = {}
+def f(path):
+    d = {}
+    if os.path.isdir(path):
+        
+        i = 0
+        for name in os.listdir(path):
+            d[name] = f(os.path.join(path, name))
+            if str(os.path.join(path, name)).endswith(".txt"):
+                
+                content = open(os.path.join(path, name), 'r', encoding="utf8")
+                lines = content.readlines()
+                d['speech'+str(i)] = lines
+                content.close()
+                i += 1
+
+    return d
+
+def get_directory_structure(rootdir):
+    """
+    Creates a nested dictionary that represents the folder structure of rootdir
+    """
+    dir = {}
+    rootdir = rootdir.rstrip(os.sep)
+    start = rootdir.rfind(os.sep) + 1
+    for path, dirs, files in os.walk(rootdir):
+        folders = path[start:].split(os.sep)
+        subdir = dict.fromkeys(files)
+        parent = functools.reduce(dict.get, folders[:-1], dir)
+        parent[folders[-1]] = subdir
+    return dir
+
+#test_dict = f('.')
+test_dict = get_directory_structure('.')
+del test_dict['.']['preprocessing.py']
+#print(test_dict)
+
+#for key, value in test_dict['.'].items() :
+#    print("key "+str(key))
+
+#print(test_dict['.']['0adams'])
+#test_dict['.']['0adams']={}
+#print(test_dict['.']['0adams'])
+#print(len(test_dict['.']))
+for (rootDir, subDirs, files) in os.walk("."):
+        folder_names.append(rootDir)
+        
+for i in range(1,3):
+#    print(folder_names[i])
+    print(test_dict['.'][folder_names[i].replace(".\\","")])
+#    print(test_dict['.']['0adams'])
+
+
+def create_nested_dict_test():
+    nested = {}
+    nested['0adams'] = []
+    dict_temp = {"speech0":"test speech",
+                 "date0":"1974"
+            }
+    
+    dict_temp2 = {"speech1":"test another speech",
+                  "date1":"1984"}
+    nested['0adams'].append(dict_temp)
+    nested['0adams'].append(dict_temp2)
+    print(nested)
+    print(nested['0adams'][0]['speech0'])
+    print(nested['0adams'][1]['date1'])
+    
+
+#print(test_dict['0adams']['speech0'][0])
+#del test_dict['0adams']['speech0'][0]
+#print(test_dict['0adams']['speech0'][0])
+#print(len(test_dict['0adams']['speech0']))
+#print(len(test_dict[']))
+
                 
 #def test():
 #    for (rootDir, subDirs, files) in os.walk("."):
@@ -89,16 +166,13 @@ def fill_all_speeches():
 #                            content = content_file.read()
 #                            all_speeches.append(content)
 
-fill_all_speeches()
-#print(len(all_speeches[0]))
-#print(len(all_speeches[1]))
-#print(len(all_speeches[2]))
-#print("before removal\n",all_speeches[0][0][0])
+#fill_all_speeches()
 
-for i in range(len(all_speeches)):
-    for j in range(len(all_speeches[i])):
-        all_speeches[i][j].pop(0)
-        all_speeches[i][j].pop(0)
+
+#for i in range(len(all_speeches)):
+#    for j in range(len(all_speeches[i])):
+#        all_speeches[i][j].pop(0)
+#        all_speeches[i][j].pop(0)
         
 from nltk.tokenize import sent_tokenize
 #all_speeches_cleaned = []
@@ -133,9 +207,9 @@ test = []
 #    sent_token_speech = sent_tokenize(all_speeches[i],language='english')
     
     
-test = ''.join(str(all_speeches[0]))
-test2 = sent_tokenize(test,language='english')
-print(test2)
+#test = ''.join(str(all_speeches[0]))
+#test2 = sent_tokenize(test,language='english')
+#print(test2)
 
     
             
@@ -539,39 +613,39 @@ def preprocess_other_data():
 ##print(str(sentence.embedding.))
 #print(sentence.get_embedding())
 #import gc
-import torch
-from flair.data import Sentence
-from flair.embeddings import WordEmbeddings
+#import torch
+#from flair.data import Sentence
+#from flair.embeddings import WordEmbeddings
+##
+### load word embeddings
+#embeddings_glove = WordEmbeddings('glove')
+##
+### some example sentence
+#sentence = Sentence('On the contrary, to extend and invigorate them is our true policy')
+##
+### embed sentences
+#embeddings_glove.embed(sentence)
+##
+##
+##
+### make one tensor of all word embeddings of a sentence
+#sentence_tensor = torch.cat([token.embedding.unsqueeze(0) for token in sentence], dim=0)
 #
-## load word embeddings
-embeddings_glove = WordEmbeddings('glove')
+## print tensor shape
+##print(sentence_tensor.shape) 
+##print(sentence_tensor)
 #
-## some example sentence
-sentence = Sentence('On the contrary, to extend and invigorate them is our true policy')
+#from flair.embeddings import FlairEmbeddings
 #
-## embed sentences
-embeddings_glove.embed(sentence)
+## init embedding
+#flair_embedding_forward = FlairEmbeddings('news-forward')
 #
+## create a sentence
+#sentence = Sentence('On the contrary, to extend and invigorate them is our true policy')
 #
-#
-## make one tensor of all word embeddings of a sentence
-sentence_tensor = torch.cat([token.embedding.unsqueeze(0) for token in sentence], dim=0)
-
-# print tensor shape
-#print(sentence_tensor.shape) 
-#print(sentence_tensor)
-
-from flair.embeddings import FlairEmbeddings
-
-# init embedding
-flair_embedding_forward = FlairEmbeddings('news-forward')
-
-# create a sentence
-sentence = Sentence('On the contrary, to extend and invigorate them is our true policy')
-
-# embed words in sentence
-flair_embedding_forward.embed(sentence)
-sentence_tensor = torch.cat([token.embedding.unsqueeze(0) for token in sentence], dim=0)
+## embed words in sentence
+#flair_embedding_forward.embed(sentence)
+#sentence_tensor = torch.cat([token.embedding.unsqueeze(0) for token in sentence], dim=0)
 
 # print tensor shape
 #print(sentence_tensor.shape) 
