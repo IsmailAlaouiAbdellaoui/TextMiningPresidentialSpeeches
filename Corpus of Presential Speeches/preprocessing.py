@@ -89,7 +89,9 @@ def fill_all_speeches():
 #                            content = content_file.read()
 #                            all_speeches.append(content)
 
-fill_all_speeches()
+#fill_all_speeches()
+            
+            
 #print(len(all_speeches[0]))
 #print(len(all_speeches[1]))
 #print(len(all_speeches[2]))
@@ -100,7 +102,19 @@ for i in range(len(all_speeches)):
         all_speeches[i][j].pop(0)
         all_speeches[i][j].pop(0)
         
-from nltk.tokenize import sent_tokenize
+#from nltk.tokenize import sent_tokenize
+
+from flair.data import Sentence
+from flair.models import SequenceTagger
+
+# make a sentence
+sentence = Sentence('I love Berlin .')
+
+# load the NER tagger
+tagger = SequenceTagger.load('ner')
+
+# run NER over sentence
+tagger.predict(sentence)
 #all_speeches_cleaned = []
 #for i in range(len(all_speeches)):
 #    for j in range(len(all_speeches[i])):
