@@ -1,0 +1,206 @@
+United States : 66
+Europe : 19
+Mississippi : 17
+France : 13
+Ohio : 12
+Spain : 11
+Great Britain : 10
+Pennsylvania : 9
+Philadelphia : 8
+New Orleans : 8
+Paris : 7
+Providence : 7
+Washington : 7
+New York : 6
+Louisiana : 5
+Tripoli : 5
+Missouri : 5
+Creeks : 5
+Atlantic : 5
+Virginia : 5
+London : 5
+States : 4
+Wabash : 4
+Holland : 4
+Algiers : 4
+State of Georgia : 3
+Tennessee : 3
+Mexico : 3
+Orleans : 3
+America : 3
+Savannah : 3
+Passamaquoddy Bay : 3
+Natchez : 3
+St. Croix : 3
+ : 3
+Georgia : 3
+Chesapeake : 3
+Kentucky : 3
+Boston : 3
+Country : 3
+Madrid : 2
+Indiana : 2
+Louisana : 2
+Lake Erie : 2
+Chickasaws : 2
+Tunis : 2
+Canada : 2
+Alexandria : 2
+Mediterranean : 2
+Columbia : 2
+Barbary : 2
+Pacific : 2
+Gibraltar : 2
+Maryland : 2
+Charleston : 2
+Prussia : 2
+Amsterdam : 2
+Illinois : 2
+French Republic : 2
+St. Louis : 2
+North : 2
+Niagara : 2
+Atlantic States : 2
+Northampton : 1
+State of Pennsylvania : 1
+Bucks : 1
+Montgomery : 1
+Iberville : 1
+Delawares : 1
+Mobile : 1
+District of Louisana : 1
+Territory of Orleans : 1
+Vincennes : 1
+Ocmulgee : 1
+Gulf Stream : 1
+Olcofauhatche : 1
+Connecticut Reserve : 1
+Piankeshaws : 1
+Territories of Orleans : 1
+Derne : 1
+Florida : 1
+Baltimore : 1
+River Potomack : 1
+George Town : 1
+Red : 1
+Bayou Pierre : 1
+Sabine : 1
+Barbary States : 1
+State of New York : 1
+Augusta : 1
+Tombigbee : 1
+Born : 1
+Passamaquoddy : 1
+Walnut Hills : 1
+Bay of Fundy : 1
+Scoodiac : 1
+New-Jersey : 1
+Presquisle : 1
+Allegeny : 1
+Allegany : 1
+Norfolk : 1
+Post Roads : 1
+Europe) : 1
+North West : 1
+States of : 1
+New Jersey : 1
+East Indies : 1
+The Creek : 1
+Morocco : 1
+Yazoo : 1
+Western Ocean : 1
+Potomac : 1
+the Lakes : 1
+James : 1
+Hudson : 1
+Susquehanna : 1
+State of Rhode Island : 1
+July : 1
+Port Tobacco : 1
+Ste : 1
+Java : 1
+Nootka : 1
+California : 1
+Southwardly : 1
+Oregan : 1
+Colorado : 1
+United states : 1
+Cahokia : 1
+Batavia : 1
+Isles of France & Bourbon : 1
+& John Elmslie : 1
+Kaskaskia : 1
+Ouisconsin : 1
+Win : 1
+Pacific Ocean : 1
+Rio : 1
+Colorado & Oregan : 1
+Horn : 1
+England : 1
+Missisipi : 1
+Rio Bravo : 1
+U. S : 1
+Columbia) : 1
+U : 1
+Cape of good Hope : 1
+Tennesee River : 1
+Chickamagas : 1
+Antwerp : 1
+St. Domingo : 1
+Israel : 1
+Majestys Provinces of East : 1
+West Florida : 1
+Detroit : 1
+Michelimackina : 1
+West Indies : 1
+Universe : 1
+War : 1
+Aranjuez : 1
+Oswego : 1
+St. Andrews : 1
+Colerain : 1
+Fort Miami : 1
+Austria : 1
+United Netherlands : 1
+Tioga : 1
+Fort Stanwix : 1
+Chiefs : 1
+Miamee Village : 1
+Delaware : 1
+Currituck : 1
+St. Marys : 1
+Cape Cod : 1
+Liman : 1
+Sound : 1
+Maine : 1
+Holston : 1
+State of North Carolina : 1
+Alabamas : 1
+Sacs : 1
+Cherokee : 1
+Indian Territory : 1
+Oconee : 1
+Vicennes : 1
+Oakmulgee : 1
+Talasscee : 1
+\\\\ : 1
+Connecticut : 1
+New Haven : 1
+Union : 1
+Spain--which : 1
+Southern : 1
+The North : 1
+East : 1
+South : 1
+Western-- : 1
+Washita : 1
+State : 1
+Bastrops : 1
+Cumberland : 1
+Pittsburg : 1
+Alleghany : 1
+Nashville : 1
+State of Tennessee : 1
+Frankfort : 1
+West : 1
+Northwest : 1

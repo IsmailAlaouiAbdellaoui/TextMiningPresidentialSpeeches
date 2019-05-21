@@ -1,0 +1,53 @@
+['./adams_speeches_007.txt', "['1800']"] {' Northampton', 'United States', ' State of Pennsylvania', ' Bucks', ' Philadelphia', ' United States', ' Montgomery'}
+['./jefferson_speeches_010.txt', "['1805']"] {' Paris', ' Madrid', 'Madrid', ' Spain', ' Mississippi', ' Iberville', ' United States', ' Europe', ' Louisiana', ' New Orleans', ' France'}
+['./jefferson_speeches_002.txt', "['1802']"] {'./jefferson_speeches_002.txt [1802] set('}
+['./washington_speeches_006.txt', "['1792']"] {'States'}
+['./jefferson_speeches_012.txt', "['1804']"] {' Ohio', ' Wabash', ' Indiana', 'Paris', ' Louisana', ' Delawares', ' Mobile', ' District of Louisana', ' Tripoli', ' Mississippi', ' Spain', ' Lake Erie', ' United States', ' Europe', ' Territory of Orleans', ' Vincennes'}
+['./jefferson_speeches_013.txt', "['1805']"] {' Chickasaws', ' Louisana', ' Ocmulgee', ' Spain', ' Gulf Stream', ' Olcofauhatche', ' Tunis', ' State of Georgia', ' France', ' Europe', ' Ohio', ' Connecticut Reserve', ' Missouri', ' Tripoli', ' Piankeshaws', ' Mississippi', ' Territories of Orleans', ' Derne', ' Tennessee', ' United States', 'Creeks', ' Providence'}
+['./jefferson_speeches_015.txt', "['1806']"] {' Missouri', ' New York', ' Canada', ' Philadelphia', ' Mississippi', ' Spain', ' Florida', ' United States', ' Mexico', 'Baltimore'}
+['./washington_speeches_007.txt', "['1791']"] {' River Potomack', ' Holland', 'United States', ' George Town', ' Alexandria', ' United States'}
+['./jefferson_speeches_017.txt', "['1806']"] {' Orleans', ' Mediterranean', ' Missouri', 'Red', ' Bayou Pierre', ' Tunis', ' Columbia', ' Mississippi', ' Spain', ' Sabine', ' Barbary', ' United States', ' Pacific', ' Europe', ' Louisiana', ' New Orleans', ' France'}
+['./jefferson_speeches_003.txt', "['1801']"] {' Mediterranean', ' Barbary States', ' Gibraltar', ' Tripoli', 'Atlantic', ' United States'}
+['./jefferson_speeches_000.txt', "['1801']"] {'Providence'}
+['./jefferson_speeches_004.txt', "['1802']"] {' State of New York', ' United States', 'United States'}
+['./adams_speeches_001.txt', "['1797']"] {'United States', ' America', ' United States', ' Europe', ' States', ' Providence'}
+['./jefferson_speeches_007.txt', "['1803']"] {' New Orleans', 'Mississippi', ' Augusta', ' Mississippi', ' Savannah', ' Tombigbee', ' Born'}
+['./adams_speeches_002.txt', "['1798']"] {' Passamaquoddy', ' Walnut Hills', ' Great Britain', 'United States', ' Passamaquoddy Bay', ' Natchez', ' St. Croix', ' Spain', ' Mississippi', ' United States', ' Europe', ' Bay of Fundy', ' France', ' Scoodiac'}
+['./washington_speeches_014.txt', "['1794']"] {' New-Jersey', ' Creeks', ' Ohio', '', ' Presquisle', ' Washington', 'United States', ' Allegeny', ' Maryland', ' Pennsylvania', ' Virginia', ' United States', ' Lake Erie', ' Georgia'}
+['./jefferson_speeches_022.txt', "['1809']"] {'./jefferson_speeches_022.txt [1809] set('}
+['./washington_speeches_012.txt', "['1794']"] {' Washington', ' Allegany', ' Pennsylvania', ' Philadelphia', ' United States', 'Pennsylvania'}
+['./jefferson_speeches_014.txt', "['1806']"] {' United States', ' Washington', 'United States'}
+['./jefferson_speeches_020.txt', "['1807']"] {' New York', ' Norfolk', ' Charleston', ' Mississippi', ' Barbary', 'Atlantic', ' London', ' United States', ' Virginia', ' Europe', ' Spain', ' New Orleans', ' Chesapeake'}
+['./jefferson_speeches_021.txt', "['1807']"] {' United States', ' Europe', ' Washington', 'United States'}
+['./washington_speeches_001.txt', "['1790']"] {' Ohio', ' Holland', ' Kentucky', ' Wabash', 'United States', ' Post Roads', ' Europe)', ' North West', ' Europe'}
+['./washington_speeches_013.txt', "['1794']"] {' States of', 'United States', ' Maryland', ' New Jersey', ' Pennsylvania', ' Virginia', ' United States', ' Providence'}
+['./adams_speeches_000.txt', "['1797']"] {' Paris', ' Prussia', ' Amsterdam', ' United States', ' Europe', 'Europe', ' France', ' East Indies'}
+['./washington_speeches_016.txt', "['1795']"] {' Creeks', ' Ohio', ' Great Britain', 'United States', ' The Creek', ' Algiers', ' Georgia', ' United States', ' Europe', ' Morocco'}
+['./jefferson_speeches_009.txt', "['1803']"] {'', ' Ohio', ' Yazoo', ' Western Ocean', ' Chickasaws', ' Missouri', ' Wabash', ' Potomac', ' Illinois', ' the Lakes', ' Mississippi', ' Savannah', 'Atlantic', ' Tennessee', ' United States', ' James', ' Hudson', ' Susquehanna'}
+['./adams_speeches_005.txt', "['1797']"] {' Paris', ' Holland', ' Boston', ' State of Rhode Island', ' Great Britain', ' France', ' Philadelphia', ' St. Croix', ' French Republic', ' Spain', ' London', ' United States', ' Europe', ' Providence', 'Passamaquoddy Bay', ' July'}
+['./adams_speeches_006.txt', "['1799']"] {' Washington', ' Alexandria', 'America', ' United States', ' Port Tobacco'}
+['./adams_speeches_003.txt', "['1798']"] {' United States', ' Philadelphia', 'United States'}
+['./washington_speeches_018.txt', "['1796']"] {' United States', ' Great Britain', 'United States'}
+['./jefferson_speeches_006.txt', "['1803']"] {' Great Britain', ' Ste', ' Java', ' Nootka', ' California', ' Spain', 'St. Louis', ' Pacific', ' Southwardly', ' Oregan', ' Colorado', ' United states', ' Washington', ' Cahokia', ' Batavia', ' Isles of France & Bourbon', ' North', ' & John Elmslie', ' Kaskaskia', ' Ouisconsin', ' Win', ' Pacific Ocean', ' France', ' Rio', ' Colorado & Oregan', ' Missouri', ' Horn', ' England', ' Missisipi', ' Mexico', ' Rio Bravo', ' Columbia', ' U. S', ' Columbia)', ' U', ' Cape of good Hope'}
+['./washington_speeches_005.txt', "['1792']"] {' Ohio', ' Tennesee River', 'United States', ' Chickamagas', ' Amsterdam', ' Country', ' Antwerp', ' United States', ' Virginia'}
+['./washington_speeches_008.txt', "['1792']"] {' United States', ' State of Georgia', 'United States'}
+['./adams_speeches_004.txt', "['1799']"] {' Paris', ' St. Domingo', ' Washington', ' Great Britain', 'United States', ' Pennsylvania', ' Philadelphia', ' French Republic', ' London', ' United States', ' France'}
+['./jefferson_speeches_011.txt', "['1805']"] {'Mississippi', ' Israel', ' Louisiana', ' United States'}
+['./washington_speeches_020.txt', "['1796']"] {' Great Britain', ' Majestys Provinces of East', ' Passamaquoddy Bay', ' Natchez', ' Canada', ' Boston', ' West Florida', ' Detroit', ' State of Georgia', ' Michelimackina', ' London', ' West Indies', ' Universe', ' War', ' Tripoli', ' Country', ' Aranjuez', 'Oswego', ' St. Andrews', ' Niagara', ' New York', ' St. Croix', ' Colerain', ' Algiers', ' United States', ' Fort Miami'}
+['./washington_speeches_011.txt', "['1793']"] {' Austria', ' Great Britain', 'United States', ' Prussia', ' United States', ' United Netherlands', ' France'}
+['./jefferson_speeches_008.txt', "['1803']"] {' Paris', ' Ohio', ' New Orleans', 'United States', ' Illinois', ' States', ' Mississippi', ' United States', ' Europe', ' Louisiana', ' Providence', ' France'}
+['./washington_speeches_015.txt', "['1795']"] {' United States', ' Pennsylvania', 'Pennsylvania'}
+['./washington_speeches_000.txt', "['1789']"] {' United States', 'United States'}
+['./washington_speeches_004.txt', "['1789']"] {'United States'}
+['./washington_speeches_002.txt', "['1790']"] {' Ohio', ' Niagara', ' Tioga', 'United States', ' New York', ' United States', ' Pennsylvania', ' Philadelphia', ' Fort Stanwix', ' Chiefs', ' Miamee Village'}
+['./washington_speeches_009.txt', "['1793']"] {'./washington_speeches_009.txt [1793] set('}
+['./washington_speeches_010.txt', "['1793']"] {' Ohio', ' Holland', 'United States', ' United States', ' Europe', ' States', ' France'}
+['./jefferson_speeches_018.txt', "['1807']"] {' Delaware', ' Orleans', ' Boston', ' Currituck', ' New York', ' St. Marys', ' Cape Cod', ' Gibraltar', ' Charleston', ' United States', ' Liman', ' Mississippi', ' Savannah', ' Algiers', ' Sound', ' Europe', 'Maine', ' Chesapeake'}
+['./washington_speeches_019.txt', "['1796']"] {'United States', ' Philadelphia', ' Holston', ' America', ' United States'}
+['./washington_speeches_003.txt', "['1790']"] {' United States', 'Country', ' State of North Carolina'}
+['./jefferson_speeches_023.txt', "['1808']"] {' Paris', ' Great Britain', ' Alabamas', ' New York', ' Sacs', ' Chesapeake', ' Spain', ' Mississippi', ' Algiers', ' London', ' United States', ' Cherokee', 'Creeks', ' New Orleans', ' France', ' Europe'}
+['./jefferson_speeches_005.txt', "['1802']"] {' Creeks', ' Wabash', 'United States', ' Indian Territory', ' Oconee', ' Vicennes', ' Oakmulgee', ' Tripoli', ' Georgia', ' United States', ' Europe', ' Louisiana', ' France', ' Talasscee'}
+['./jefferson_speeches_001.txt', "['1801']"] {'\\\\', 'Connecticut', ' New Haven'}
+['./washington_speeches_017.txt', "['1796']"] {'', ' Union', ' Spain--which', ' Southern', ' Great Britain', ' North', ' Atlantic', ' The North', ' East', ' Spain', ' Mississippi', 'Atlantic', ' South', ' United States', ' Atlantic States', ' Europe', ' Western--', ' Providence'}
+['./jefferson_speeches_019.txt', "['1807']"] {' Ohio', ' Orleans', ' Washita', ' State', ' Kentucky', ' Bastrops', ' Cumberland', 'Pittsburg', ' Alleghany', ' Nashville', ' State of Tennessee', ' Mississippi', ' Frankfort', ' United States', ' Atlantic States', ' Mexico', ' New Orleans'}
+['./jefferson_speeches_016.txt', "['1806']"] {' Ohio', ' Kentucky', ' Indiana', 'Mississippi', ' Natchez', ' Pennsylvania', ' West', ' Tennessee', ' St. Louis', ' Virginia', ' Northwest', ' New Orleans'}

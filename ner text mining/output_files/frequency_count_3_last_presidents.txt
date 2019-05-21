@@ -1,0 +1,794 @@
+America : 125
+United States : 100
+Washington : 56
+Middle East : 46
+Iraq : 44
+Afghanistan : 43
+Europe : 37
+White House : 36
+Iran : 36
+China : 32
+ : 29
+Earth : 25
+Africa : 25
+Asia : 24
+Israel : 22
+Russia : 22
+Japan : 21
+California : 19
+U. S : 19
+Wall Street : 18
+New York : 18
+Pakistan : 16
+Chicago : 15
+North Korea : 15
+United States.\\\\n] : 14
+Germany : 13
+Texas : 13
+Bosnia : 13
+Egypt : 12
+Syria : 12
+Illinois : 12
+Soviet Union : 12
+al Qaeda : 12
+U. N : 12
+South Korea : 11
+United States.\\\\n : 11
+India : 11
+South Africa : 11
+Ohio : 11
+Florida : 11
+Louisiana : 10
+Mexico : 10
+Ukraine : 10
+Libya : 10
+Pennsylvania : 9
+Burma : 9
+Baghdad : 9
+Jordan : 9
+Alabama : 9
+Vietnam : 9
+Yemen : 9
+Berlin : 9
+Haiti : 9
+Mississippi : 8
+Capitol : 8
+Lebanon : 8
+Colombia : 8
+London : 8
+Kosovo : 8
+Somalia : 8
+New York City : 8
+Latin America : 8
+Northern Ireland : 8
+U : 8
+America.\\\\n : 8
+New Hampshire : 7
+Cuba : 7
+Holy Land : 7
+Saudi Arabia : 7
+New Jersey : 7
+North Carolina : 7
+Los Angeles : 7
+Philadelphia : 7
+Americas : 7
+West : 7
+Main Street : 7
+Guantanamo Bay : 7
+Korea : 7
+Indonesia : 7
+DC : 6
+Arkansas : 6
+New Orleans : 6
+Middle East.\\\\n : 6
+Detroit : 6
+Turkey : 6
+Atlantic : 6
+Palestine : 6
+Georgia : 6
+Capitol Hill : 6
+Poland : 6
+Arizona : 6
+[Thank : 6
+Kuwait : 6
+North Africa : 6
+Pacific : 6
+Cairo : 6
+South Asia : 6
+Tucson : 6
+Iowa : 5
+Virginia : 5
+Cleveland : 5
+Boston : 5
+France : 5
+Italy : 5
+Connecticut : 5
+Kentucky : 5
+Korean Peninsula : 5
+Tehran : 5
+Al Qaeda : 5
+Panama : 5
+Jerusalem : 5
+Philippines : 5
+Newtown : 5
+South : 5
+Australia : 5
+East : 5
+Gaza : 5
+Eastern Europe : 5
+Minnesota : 5
+Paris : 5
+Midwest : 5
+Colorado : 5
+Pentagon : 5
+England : 4
+Utah : 4
+Atlanta : 4
+Mississippi Delta : 4
+Tennessee : 4
+Maryland : 4
+Canada : 4
+Sudan : 4
+Tunis : 4
+Selma : 4
+Croatia : 4
+Nigeria : 4
+Rwanda : 4
+Serbia : 4
+Balkans : 4
+Tunisia : 4
+Minneapolis : 4
+Great Britain : 4
+El Salvador : 4
+English : 4
+Al Qaida : 4
+Kansas : 4
+West Point : 4
+Damascus : 4
+West Bank : 4
+Kenya : 4
+Gulf : 4
+Michigan : 4
+Islamic Republic of Iran : 4
+Gulf Coast : 4
+Berlin Wall : 4
+Phoenix : 4
+Singapore : 3
+Omaha Beach : 3
+Normandy : 3
+Pearl Harbor : 3
+Baltimore : 3
+Belarus : 3
+D : 3
+Gulf States : 3
+D. C : 3
+New Orleans.\\\\n : 3
+Madrid : 3
+Doha : 3
+Appalachia : 3
+Oval Office : 3
+San Francisco : 3
+Birmingham : 3
+Concord : 3
+Greece : 3
+Hungary : 3
+Sarajevo : 3
+Central Europe : 3
+Fallujah : 3
+South Carolina : 3
+Miami : 3
+Spain : 3
+Bahrain : 3
+Yellowstone : 3
+Caribbean : 3
+North Dakota : 3
+Aurora : 3
+Oak Creek : 3
+Arabian Peninsula : 3
+Oklahoma : 3
+Beijing : 3
+Hawaii : 3
+Belfast : 3
+Indiana : 3
+Silicon Valley : 3
+Benghazi : 3
+Brazil : 3
+Oklahoma City : 3
+Interstate Highway System : 3
+Tampa : 3
+Nevada : 3
+United States Congress : 3
+Southeast Asia : 3
+Omaha : 2
+Statue of Liberty : 2
+Washington State : 2
+U. N. : 2
+Congo : 2
+Anbar Province : 2
+Shia Islam : 2
+Harlem : 2
+Golden Mosque of Samarra : 2
+Pittsburgh : 2
+Palestinian Territories : 2
+USA : 2
+Zimbabwe : 2
+States : 2
+Republic of Georgia : 2
+Mall : 2
+Rio Grande : 2
+Iwo Jima : 2
+Sierra Leone : 2
+Cape Town : 2
+Cambodia : 2
+Botswana : 2
+Senegal : 2
+Uganda : 2
+Ghana : 2
+Albania : 2
+Czech Republic : 2
+State of Israel : 2
+Mali : 2
+Youngstown : 2
+Raleigh : 2
+Asia-Pacific : 2
+Denmark : 2
+Twin Towers : 2
+Netherlands : 2
+Montgomery : 2
+Scranton : 2
+Greensburg : 2
+North : 2
+Franklin Roosevelt : 2
+Persian Gulf : 2
+United Kingdom : 2
+Middle Eastern : 2
+Morocco : 2
+Taiwan : 2
+East Asia : 2
+Leipzig : 2
+Western Europe : 2
+Kabul : 2
+Baton Rouge : 2
+Rose Garden : 2
+Crawford : 2
+Ellis Island : 2
+Tanzania : 2
+Washington.\\\\n : 2
+Toledo : 2
+Sanaa : 2
+Seoul : 2
+Bulgaria : 2
+Jordan River : 2
+Sderot : 2
+Ethiopia : 2
+Annapolis : 2
+South America : 2
+Jakarta : 2
+Casablanca : 2
+Copenhagen : 2
+sub-Sahara Africa : 2
+Blacksburg : 2
+Well : 2
+Mars : 2
+West Virginia : 2
+Asia Pacific : 2
+Thailand : 2
+Tahrir Square : 2
+St. Paul : 2
+Chile : 2
+Britain : 2
+Montana : 2
+Great Lakes : 2
+Columbine : 2
+Space Coast : 2
+Ive : 2
+Houston : 2
+Dakotas : 2
+State : 2
+Washington. : 2
+Amman : 2
+New Mexico : 2
+Denver : 2
+Providence : 2
+Pattons Army : 2
+American South : 2
+West Africa : 2
+Europe.\\\\n : 2
+Bali : 2
+South Side : 2
+Born : 2
+Federal : 2
+Norway : 2
+Darfur : 2
+Austin : 2
+Missouri : 2
+God : 2
+Hope : 2
+Richmond : 1
+Savannah : 1
+Kiev : 1
+Newcastle : 1
+Prague : 1
+South Station : 1
+Bedford : 1
+Gaines : 1
+Anacostia : 1
+New Haven : 1
+Nation\\\\s Capital : 1
+Little Book : 1
+of\\\\ Houston : 1
+State of Florida : 1
+Atlantic Ocean : 1
+North Atlantic : 1
+Independence : 1
+Argentina : 1
+Jamaica : 1
+THEARC : 1
+Anbar : 1
+Baghdads : 1
+Ramallah : 1
+Burma.\\\\n\\ : 1
+Persian Gulf.\\\\n : 1
+Al Qaeda-Iraq : 1
+May : 1
+City College of New York : 1
+Hazarajat : 1
+Operation Mountain Lion : 1
+Chief : 1
+Seneca Falls : 1
+Maidan : 1
+Brown Chapel : 1
+\\Selma : 1
+Cape Canaveral.\\\\n : 1
+Soweto : 1
+Lord : 1
+Bloody Sunday : 1
+Ferguson : 1
+Accra : 1
+Independence Square : 1
+Mitsea : 1
+Kampala : 1
+Dakar : 1
+Congos : 1
+sub-Saharan Africa : 1
+Cote dIvoire : 1
+Mozambique : 1
+Independence Arch : 1
+America> : 1
+Liberia : 1
+Macedonia : 1
+Slovenia : 1
+USA. : 1
+Massachusetts : 1
+Baltics : 1
+Nicaragua : 1
+Hollywood : 1
+Gainesville Elementary School : 1
+Delaware : 1
+Blue States : 1
+Red States : 1
+Charleston.\\\\n : 1
+Des Moines : 1
+Nation : 1
+Mosul : 1
+Karbala Gap : 1
+Iraq\\\\s : 1
+Ramadi : 1
+Alcatraz : 1
+Saddam Husseins : 1
+Province : 1
+UK : 1
+State of South Carolina : 1
+Dillon : 1
+Arlington : 1
+Khe Sahn.\\\\n : 1
+Gettysburg; Normandy : 1
+Middle West : 1
+State of California : 1
+Kansas City : 1
+Temple Hills : 1
+Mexico\\\\s : 1
+Hattiesburg : 1
+Central and Eastern Europe : 1
+Little Rock : 1
+Southern California\\\\s : 1
+AME Zion Church : 1
+Capital : 1
+Washington\\\\n : 1
+Iran: America : 1
+Beslan : 1
+In New Orleans : 1
+Westminster : 1
+Oman : 1
+Central America* : 1
+Mongolia : 1
+Bangladesh : 1
+Portugal : 1
+post-Hitler Germany : 1
+Niger : 1
+Westminster Palace : 1
+East Berlin : 1
+Qatar : 1
+Teheran : 1
+Midland : 1
+Abu Ghraib : 1
+Katrina : 1
+Mayflower : 1
+Springfield : 1
+Paducah : 1
+California\\\\s : 1
+You : 1
+Pearl : 1
+Edinboro : 1
+Florida Everglades : 1
+Jonesboro : 1
+Now : 1
+American Century : 1
+LAX : 1
+Jericho : 1
+Louisville : 1
+Great Depression : 1
+Charlotte : 1
+Rio : 1
+Hoover Dam : 1
+Tripoli : 1
+Orlando : 1
+Milwaukee : 1
+Golden Gate Bridge : 1
+Andrews Air Force Base : 1
+Tokyo : 1
+Seder : 1
+Eretz Israel : 1
+Passover : 1
+Shrine of the Book : 1
+Iron Dome : 1
+Yad Vashem : 1
+Tel Aviv : 1
+Sharm el Sheikh : 1
+Congo-Kinshasa : 1
+Horn of Africa : 1
+Jalalabad : 1
+We : 1
+Jerusalems : 1
+Kenya.\\\\n : 1
+Abuja : 1
+Grand Forks : 1
+Minnesota.\\\\n : 1
+South Dakota : 1
+Jersey City : 1
+New Brunswick : 1
+Cook : 1
+Olde Queens : 1
+Douglass : 1
+Rutgers : 1
+Busch : 1
+Old Raritan : 1
+Livingston : 1
+Newark : 1
+Wisconsin : 1
+Alzheimers. : 1
+Rangoon : 1
+North Miami : 1
+Brooklyn : 1
+Gitmo : 1
+New London : 1
+Mid-Atlantic : 1
+Great Plains : 1
+Colorado Springs : 1
+West Texas : 1
+District of Columbia : 1
+Indianapolis : 1
+Lake Tahoe : 1
+Everglades : 1
+E : 1
+Congress : 1
+Tuzla : 1
+Northeast : 1
+Westminster Hall : 1
+Darwin : 1
+Cancun : 1
+Central : 1
+United Kingdom.\\\\n : 1
+Manchester : 1
+Gold : 1
+Southeast Asia.\\\\n : 1
+Checkpoint Charlie : 1
+Brandenburg Gate : 1
+Brandenburg : 1
+Panama Canal : 1
+Cold War : 1
+West Point. : 1
+United States\\\\ : 1
+Hudson River : 1
+Old West : 1
+White America : 1
+Memphis : 1
+Bronx : 1
+Utahs Red Rocks : 1
+Northern Illinois : 1
+American Heritage Rivers : 1
+West Des Moines : 1
+Midlothian : 1
+Wyoming : 1
+East Timor : 1
+Delta : 1
+Independence Hall : 1
+Caribbean Basin : 1
+Pine Ridge : 1
+Watts : 1
+Chechnya : 1
+\\Again : 1
+Cyprus : 1
+Oval : 1
+Hubble : 1
+Kazakhstan : 1
+Moon : 1
+Kennedy Space Center : 1
+Mercury : 1
+Mississippi Gulf Coast : 1
+Houston.\\\\n : 1
+Super Dome : 1
+USS Bataan : 1
+South Waziristan. : 1
+Wall Street. : 1
+Korea. : 1
+Guantanamo Bay. : 1
+\\\\Islamic Republic : 1
+East Asia. : 1
+Eastern Europe. : 1
+Iran.\\\\ : 1
+Bruce King : 1
+Benjamin Franklin High School : 1
+Tulane : 1
+United States Justice Department : 1
+UNO : 1
+Summerbridge : 1
+Columbus : 1
+Boulder : 1
+Abbottabad : 1
+Shanksville : 1
+Guinea : 1
+Pennsylvania Avenue : 1
+Elkhart : 1
+U. S.A.! : 1
+Allentown : 1
+S.A! : 1
+Indiana; Galesburg : 1
+Bull Run : 1
+Elyria : 1
+World Trade Center : 1
+[Fellow : 1
+Jackson : 1
+St. Louis : 1
+Lake Erie : 1
+Seattle : 1
+Warroad : 1
+Walter Reed : 1
+South Sudan : 1
+<applause> : 1
+U.S.A.! : 1
+Havana : 1
+Bay of Pigs : 1
+Johannesburg : 1
+Florida Straits : 1
+La Cachita.\\\\n : 1
+Shrine of our Lady of Charity : 1
+Salsa : 1
+Brussels : 1
+Belgium : 1
+Cuba.\\\\n : 1
+Lord\\\\s : 1
+Petaluma : 1
+Long Island : 1
+Kazahkstan : 1
+Newport News : 1
+Our Lady of Help : 1
+Reno : 1
+Hong Kong : 1
+East Peoria : 1
+New Yorks : 1
+Saturdays : 1
+UAE : 1
+Peru* : 1
+Guatemala : 1
+Mediterranean Sea : 1
+Fertile Crescent : 1
+Camp David : 1
+Arabic : 1
+Buckingham Palace : 1
+\\We : 1
+Hebrew : 1
+Virginia.\\\\n : 1
+USS Cole.\\\\n : 1
+Berlin\\s Brandenburg Gate.\\\\n : 1
+Daraa; : 1
+Bahrain.\\\\n : 1
+Switzerland : 1
+\\Fourth : 1
+North Africa.\\\\n : 1
+Prosperity : 1
+\\Bahrain : 1
+[A : 1
+Dover : 1
+South Waziristan : 1
+Karachi : 1
+Swat : 1
+Islamabad : 1
+Ground Zero : 1
+\\Homeland : 1
+Blue America : 1
+Lincolns Memorial : 1
+Red America : 1
+Alabama.\\\\n : 1
+Biloxi : 1
+Chalmette : 1
+Gulfport : 1
+Port of : 1
+Lake Pontchartrain : 1
+Eastward : 1
+St. Charles : 1
+Tulane Hospital for Children : 1
+Plymouth : 1
+Jamestown : 1
+Mississippi River : 1
+Crescent City : 1
+Puerto Rico : 1
+Yankee Stadium : 1
+South Bronx : 1
+Princeton : 1
+Manhattan DAs : 1
+District Court : 1
+Catholic Church : 1
+Sydney : 1
+Oslo : 1
+Rome : 1
+Kigali : 1
+Ottawa : 1
+Dhaka : 1
+Guantanamo : 1
+Central America : 1
+Moscow : 1
+Fourth : 1
+Mogadishu : 1
+Eritrea : 1
+Washington Childrens Hospital : 1
+Titusville : 1
+Western Hemisphere : 1
+Childrens Hospital : 1
+Pine Street : 1
+Galesburg : 1
+University of Central Missouri : 1
+Central Missouri : 1
+Lees Summit : 1
+Warrensburg : 1
+UCM : 1
+Avondale : 1
+Angel Island : 1
+Fresno : 1
+Las Vegas! : 1
+County Londonderry : 1
+Northern Ireland.\\\\n : 1
+Armagh : 1
+East Belfast : 1
+Irelands : 1
+Carrickfergus : 1
+Ballymena : 1
+Enterprise Center : 1
+County Wexford : 1
+Giants Causeway : 1
+\\I : 1
+St. Patrick\\\\s Day : 1
+Londonderry : 1
+Belfast.\\\\n : 1
+Romania : 1
+Baghdad.\\\\n : 1
+Lincoln : 1
+Istanbul : 1
+Republic : 1
+Riyadh : 1
+Mombasa : 1
+Rhode Island : 1
+Mavy : 1
+Gabby : 1
+Christina : 1
+University Medical Center : 1
+\\\\n : 1
+Mountain Avenue Church of Christ : 1
+Gabbys : 1
+Dorwan : 1
+Heaven : 1
+Healing Place Church : 1
+Hamburg : 1
+Straits of Hormuz : 1
+Straits of Gibraltar : 1
+New York.\\\\n : 1
+Milan : 1
+\\Now : 1
+Buffalo : 1
+Serbs : 1
+Bosnian Federation : 1
+Croats : 1
+Dayton : 1
+Yuma : 1
+Border Patrol : 1
+Artesia : 1
+D. C. : 1
+Rio Grande River : 1
+Mojave Desert : 1
+Alaska : 1
+Burundi : 1
+Derry : 1
+Fort Bragg : 1
+Martin Luther : 1
+Lincoln Memorial : 1
+Little Rock Central High School : 1
+Khe Sanh : 1
+Inchon : 1
+Lexington : 1
+Kandahar : 1
+Gettysburg : 1
+Washington.<Applause.>\\\\n : 1
+Hamilton : 1
+Houston Independent : 1
+Hamilton High : 1
+Pflugerville : 1
+Parkinsons : 1
+Oregon : 1
+Center Rock : 1
+America\\\\s : 1
+Oak Ridge National Laboratory : 1
+Main Streets : 1
+Robert\\\\s : 1
+Cincinnati : 1
+Asian : 1
+Mentor : 1
+Pool of Bethesda : 1
+St. Matthew : 1
+St. Petersburg : 1
+Bethesda : 1
+So : 1
+Strongsville : 1
+Buckeye State : 1
+Ohio.\\\\n : 1
+Army 10th Mountain Division : 1
+Sasha : 1
+Las Vegas : 1
+Cooper Union : 1
+Manhattan : 1
+Great Hall : 1
+Lower Manhattan : 1
+Bosnia.\\\\n : 1
+\\Finally : 1
+Yugoslavia : 1
+Lowcountry : 1
+Charleston : 1
+South Carolina.\\\\n : 1
+Jamal : 1
+Underground Railroad : 1
+Buchenwald : 1
+Isra : 1
+On : 1
+Ankara : 1
+Cairo.\\\\n : 1
+So America : 1
+Cordoba : 1
+Al-Azhar : 1
+Arab States : 1
+Kuala Lumpur : 1
+Andalusia : 1
+Dubai : 1
+South Lawn : 1
+From Kibuye : 1
+Ireland : 1
+Kigara River : 1
+Lake Victoria : 1
+Kibungo : 1
+Entebbe : 1
+Hanukkah : 1
+Virginia Tech : 1
+Sandy Hook : 1
+Gulf of Mexico : 1
+BP Deepwater Horizon : 1
+Deepwater Horizon : 1
+Rita : 1
+Sandy Hook Elementary : 1
